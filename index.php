@@ -7,26 +7,123 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/flickity.css">
     <title>Hello, world!</title>
   </head>
-  <body>
-  <div class="horizontal-scroll-wrapper squares">
-  <div>item 1</div>
-  <div>item 2</div>
-  <div>item 3</div>
-  <div>item 4</div>
-  <div>item 5</div>
-  <div>item 6</div>
-  <div>item 7</div>
-  <div>item 8</div>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<br>
+<br>
+<br>
+<div class="container">
+<h1 class="my-4">Pameran
+    <small>on going</small>
+  </h1>
+    <div class="">
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
 </div>
 
+  </div>
+
+  <!-- Related Projects Row -->
+  <h3 class="my-4">Related Projects</h3>
+
+  <div class="row">
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+  </div>
+  
+</div>
+<!-- /.container -->
+
+  <body>
   </body>
   
-<javascript>
-<link rel="stylesheet" href="assets/js/jquery.slim.min.js">
-<link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js">
-</javascript>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </html>
