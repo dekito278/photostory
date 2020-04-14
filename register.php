@@ -15,7 +15,7 @@
         <div class="card card-signin flex-row my-5">
           <div class="card-body">
             <h5 class="card-title text-center">register</h5>
-            <form class="form-signin" action="check_registration.php" method="POST">
+            <form class="form-signin" action="check_register.php" method="POST">
               <div class="form-label-group">
                 <input type="text" id="inputUserame" name="username" class="form-control" placeholder="Username" required autofocus>
                 <label for="inputUserame">Username</label>

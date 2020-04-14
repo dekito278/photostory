@@ -2,7 +2,7 @@
 
 $page_title = "Check registration";
 
-include 'mysqli_connect.php';
+include 'includes/config.php';
 
 if (isset ($_SESSION['username'])){
 	header('location: index.php');
@@ -28,7 +28,7 @@ else{
 
     }
     else{
-        echo "You are not register! Please try again " . "<a href='registration.php'>registration</a>";
+        echo "You are not register! Please try again " . "<a href='register.php'>registration</a>";
     }
 }
 
