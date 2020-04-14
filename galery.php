@@ -28,9 +28,7 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p></div>
 <!-- Image Section -->
 <div id="images">
-<?php
-$id = $_GET ['id'];
-$query = 
+
             <img src="assets/images/img-1.jpg" alt="">
             <div class="caption">
                 <h3>Photo One</h3>
