@@ -12,7 +12,11 @@
 <body>
 <div class="d-flex justify-content-center align-items-center container">
 <div class="row">
-<form action="upload-proses.php" method="post" enctype="multipart/form-data">
+<form action="upload-proses.php" method="post">
+<div class="form-group">
+    <label for="prolog">Prolog</label>
+    <textarea class="form-control" id="prolog" type="text" name="prolog" rows="3"></textarea>
+</div>
 <div class="form-group">
     <label>Judul Foto</label>
     <input class="form-control" type="text" name="judul" placeholder="Masukkan judul foto">
@@ -31,6 +35,12 @@
     <label for="caption">Caption Foto</label>
     <textarea class="form-control" id="caption" type="text" name="caption" rows="3"></textarea>
 </div>
+</form>
+</div>
+</div>
+<div class="d-flex justify-content-center align-items-center container">
+<div class="row">
+<form action="upload-proses.php" method="post" enctype="multipart/form-data">
  <div class="form-group">
      <label>Pilih Foto</label>    
   <input type="file" name="fileToUpload" id="fileToUpload">
