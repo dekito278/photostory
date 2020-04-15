@@ -1,14 +1,16 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+$page_title = 'Login';
+
+include 'includes/header.php';
+
+include 'includes/navbar.php';
+
+if (isset ($_SESSION['username'])){
+	echo "You are logged! You can " . "<a href='logout.php'>" . "logout" . "</a>";
+}
+else{
+?>
 
 <body>
   <div class="container">
@@ -17,22 +19,19 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Sign In</h5>
-            <form class="form-signin">
+            <form class="form-signin" action="check_login.php" method="POST">
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">Email address</label>
+                <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+                <label for="username">Username</label>
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
+                <input type="password" name="pass" class="form-control" placeholder="Password" required>
+                <label for="Password">Password</label>
               </div>
 
-              <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Remember password</label>
-              </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" value="submit">Sign in</button>
               <hr class="my-4">
               <a class="d-block text-center mt-2 small" href="register.php">register</a>
             </form>
@@ -42,7 +41,8 @@
     </div>
   </div>
 </body>
-<javascript>
-<link rel="stylesheet" href="assets/js/jquery.slim.min.js">
-<link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js">
-</javascript>
+
+<?php
+}
+
+include 'includes/footer.php';

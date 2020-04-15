@@ -1,16 +1,23 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Galery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style_galery.css" />
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/galery.js"></script>
-</head>
-<body>
-    <main>
+<?php
+
+$page_title = "galery";
+
+include 'includes/config.php';
+
+include 'includes/header.php';
+
+include 'includes/navbar.php';
+
+$dirname = "uploads/";
+$images = glob ($dirname . "*.jpg");
+
+$sql1 = "SELECT foto FROM upload_photo";
+$result = mysqli_query ($connection, $sql1);
+
+if (mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+        $path = "databasephoto/" . $row['foto'];
+?> 
         <div id="landing">
             <div id="landing-text">
                 <div id="landing-text-inner">
@@ -23,62 +30,25 @@
             </div>
             <div id="landing-images"></div>
         </div>
-<div class="caption">
-    <h3>Photo One</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p></div>
-<!-- Image Section -->
-<div id="images">
+           
+        <div class="caption">
+            <h3>Photo One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing   elit. Ipsum, veniam?</p></div>
+            <!-- Image Section -->
+            <div id="images">
+            <img src="<?php echo $path; ?>" id="<?php $filename = $row['foto']; ?>">
+            <div class="caption">
+                <h3 class="desc"><?php echo $row["judul"]; ?></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
+            </div>
+            <?php
+    }
+    mysqli_free_result ($result);
+}
 
-            <img src="assets/images/img-1.jpg" alt="">
-            <div class="caption">
-                <h3>Photo One</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-2.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Two</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-3.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Three</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-4.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Four</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-5.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Five</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-6.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Six</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-7.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Seven</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-8.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Eight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-9.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Nine</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-            <img src="assets/images/img-10.jpg" alt="">
-            <div class="caption">
-                <h3>Photo Ten</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam?</p>
-            </div>
-        </div>
-    </main>
-</body>
+mysqli_close ($connection);
+unset ($connection);
+
+include 'includes/footer.php';
+
+?>
