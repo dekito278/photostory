@@ -89,7 +89,7 @@ body {
 					<?php
 					}
     				?>
-					<li class="nav-item"><a href="pictures.php" class="nav-link text-uppercase font-weight-bold">Gallery</a>
+					<li class="nav-item"><a href="galery.php" class="nav-link text-uppercase font-weight-bold">Gallery</a>
 					</li>
                     <?php
 

@@ -2,14 +2,12 @@
 
 $page_title = 'Check login';
 
-include 'includes/header.php';
-
-include 'includes/navbar.php';
-
 include 'includes/config.php';
 
+include 'includes/header.php';
+
 if ($_SESSION['username']){
-	header ('location: index.php');
+	header ('location: login.php');
 }
 else{
     $username = $_POST['username'];
@@ -23,7 +21,7 @@ else{
         while ($row = mysqli_fetch_assoc ($result)){
             $_SESSION['username'] = $row['username'];
             include 'includes/navbar.php';
-            echo "You are logged in with name '" . $row['username'] . "', please move on " . '<a href="index.php">pictures</a>';
+            echo "You are logged in with name '" . $row['username'] . "', please move on " . '<a href="index.php">index</a>';
 	 
         }
     }
