@@ -3,6 +3,7 @@
 $page_title = 'Home';
 
 include 'includes/header.php';
+include 'includes/config.php';
 ?>
 
 <?php

@@ -80,32 +80,19 @@ body {
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
 				<?php
-				if (file_exists('index.php')){
+				 (file_exists('index.php'))
 					?>
 					<li class="nav-item active"><a href="index.php" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-					<?php
-					}else{
-						?>
-					<li class="nav-item"><a href="../index.php" class="nav-link text-uppercase font-weight-bold">Home</a></li>
-					<?php
-					}
-    				?>
+					
 					<li class="nav-item"><a href="galery.php" class="nav-link text-uppercase font-weight-bold">Gallery</a>
-					</li>
+                    </li>
+                    
                     <?php
-
-					if (isset ($_SESSION['username'])){
+					(isset ($_SESSION['username']))
     				?>
 					<li class="nav-item"><a href="logout.php" class="nav-link text-uppercase font-weight-bold">Logout <?php echo '"' . $_SESSION['username'] . '"'; ?></a></li>
-					<?php
-					}
-					else{
-    				?>
-					<li class="nav-item"><a href="login.php" class="nav-link text-uppercase font-weight-bold">Login</a></li>
-					<li class="nav-item"><a href="register.php" class="nav-link text-uppercase font-weight-bold">Register</a></li>
-					<?php
-					}
-					?>
+					
+					
                 </ul>
             </div>
         </div>
