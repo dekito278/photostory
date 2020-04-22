@@ -5,6 +5,7 @@ $page_title = 'Login';
 
 include 'includes/header.php';
 include 'includes/navbar.php';
+include 'includes/m_popup_log.php';
 
 ?>
 <head>

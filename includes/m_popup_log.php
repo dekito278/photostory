@@ -9,13 +9,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">registration options</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Log in options</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <a  type="button" class="btn btn-primary btn-lg btn-block" href="reg_pam.php" >Register for pameris</a>
+        <a  type="button" class="btn btn-primary btn-lg btn-block" href="log_pam.php" >Log in for pameris</a>
         
       </div>
     </div>
