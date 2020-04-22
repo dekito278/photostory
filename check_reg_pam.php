@@ -1,6 +1,6 @@
 <?php
 
-$page_title = "Check registration";
+$page_title = "Cek registrasi pameris";
 
 include 'includes/config.php';
 
@@ -10,11 +10,12 @@ if (isset ($_SESSION['username'])){
 else{
 	
     $username = $_POST['username'];
-    $password = $_POST['pass'];
+    $full_name = $_POST['full_name'];
+    $password = $_POST['password'];
 
 
-    $sql1 = "SELECT username, userpassword FROM users WHERE username = '{$username}' AND userpassword = '{$password}'";
-    $sql2 = "INSERT INTO users (username, userpassword) VALUES ('$username', '$password')";
+    $sql1 = "SELECT username, full_name, password_pam FROM users_pameris WHERE username = '{$username}', full_name'{$full_name}' ,password_pam = '{$password}' ";
+    $sql2 = "INSERT INTO users_pameris (username ,full_name ,password_pam) VALUES ('$username', '$full_name','$password')";
 
     $result1 = mysqli_query ($connection, $sql1) or die (mysqli_error ($connection));
 

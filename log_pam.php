@@ -1,6 +1,6 @@
 <?php
 
-$page_title = 'Login';
+$page_title = 'Login pameris';
 
 
 include 'includes/header.php';
@@ -23,22 +23,22 @@ include 'includes/navbar.php';
       <br>
         <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">log in to see artwork</h5>
-            <form class="form-signin" action="check_login.php" method="POST">
+            <h5 class="card-title text-center">Sign In pameris</h5>
+            <form class="form-signin" action="check_log_pam.php" method="POST">
               <div class="form-label-group">
                 <input type="text" id="inputUserame" name="username" class="form-control" placeholder="Username" required autofocus>
                 <label for="inputUserame">Username</label>
               </div>
-
+              
               <div class="form-label-group">
-                <input type="password" id="inputPassword" name="pass" class="form-control" placeholder="Password" required>
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
                 <label for="inputPassword">Password</label>
               </div>
 
               
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" value="submit">log in</button>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" value="submit">Sign in pameris</button>
               <hr class="my-4">
-              <a class="d-block text-center mt-2 small" href="register.php">sign up to see artwork</a>
+              <a class="d-block text-center mt-2 small" href="reg_pam.php">register pameris</a>
             </form>
           </div>
         </div>

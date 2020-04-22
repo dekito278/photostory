@@ -4,6 +4,8 @@
 
   include 'includes/header.php';
   include 'includes/navbar.php';
+  include 'includes/m_popup_reg.php';
+
   if (isset ($_SESSION['username'])){
     echo "logged in with name '" .$_SESSION['username'] . "'. You can <a href='logout.php'>logout</a>";
   }

@@ -8,11 +8,13 @@ include 'includes/config.php';
 
 <?php
 include 'includes/navbar.php';
+
 ?>
 
 
 <br>
 <br>
+
 <div class="container">
 <h1 class="my-4">Pameran
     <small>on going</small>
