@@ -2,9 +2,9 @@
 
 $page_title = 'Check login pameris';
 
-include 'includes/config.php';
+include './includes/config.php';
 
-include 'includes/header.php';
+include './includes/header.php';
 
 if ($_SESSION['username']){
 	header ('location: index.php');
@@ -31,5 +31,5 @@ else{
 
 mysqli_close($connection);
 
-include 'includes/footer.php';
+include './includes/footer.php';
 ?>

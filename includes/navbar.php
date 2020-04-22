@@ -112,7 +112,8 @@ body {
     </nav>
 </header>
 
-<script>$(function () {
+<script>
+$(function () {
     $(window).on('scroll', function () {
         if ( $(window).scrollTop() > 10 ) {
             $('.navbar').addClass('active');

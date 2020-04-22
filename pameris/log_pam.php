@@ -5,7 +5,7 @@ $page_title = 'Login pameris';
 
 include 'includes/header.php';
 include 'includes/navbar.php';
-
+include 'includes/m_popup_log.php';
 ?>
 <head>
 
@@ -24,7 +24,7 @@ include 'includes/navbar.php';
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Sign In pameris</h5>
-            <form class="form-signin" action="check_log_pam.php" method="POST">
+            <form class="form-signin" action="pameris/check_log_pam.php" method="POST">
               <div class="form-label-group">
                 <input type="text" id="inputUserame" name="username" class="form-control" placeholder="Username" required autofocus>
                 <label for="inputUserame">Username</label>
@@ -38,7 +38,7 @@ include 'includes/navbar.php';
               
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" value="submit">Sign in pameris</button>
               <hr class="my-4">
-              <a class="d-block text-center mt-2 small" href="reg_pam.php">register pameris</a>
+              <a class="d-block text-center mt-2 small" href="pameris/reg_pam.php">register pameris</a>
             </form>
           </div>
         </div>

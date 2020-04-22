@@ -15,7 +15,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <a  type="button" class="btn btn-primary btn-lg btn-block" href="reg_pam.php" >Register for pameris</a>
+        <a  type="button" class="btn btn-primary btn-lg btn-block" href="pameris/reg_pam.php" >Register for pameris</a>
         
       </div>
     </div>

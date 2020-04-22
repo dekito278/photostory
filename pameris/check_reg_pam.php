@@ -23,7 +23,7 @@ else{
     if (mysqli_num_rows ($result1) == 0){
         if (mysqli_query ($connection, $sql2)){
             include 'includes/navbar.php';
-            echo "New registration: '" . $full_name . "'<br>"."<a href='index.php'>Move</a>";
+            echo "New registration: '" . $full_name . "'<br>"."<a href='pameris/index.php'>Move</a>";
             
             
         }
@@ -33,7 +33,7 @@ else{
 
     }
     else{
-        echo "You are not register! Please try again " . "<a href='reg_pam.php'>registration</a>";
+        echo "You are not register! Please try again " . "<a href='pameris/reg_pam.php'>registration</a>";
     }
 }
 

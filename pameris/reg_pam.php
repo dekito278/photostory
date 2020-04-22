@@ -2,9 +2,9 @@
   <?php 
   $page_title = "register pameris";
 
-  include 'includes/header.php';
-  include 'includes/navbar.php';
-
+  include './includes/header.php';
+  include './includes/navbar.php';
+  include 'includes/m_popup_reg.php';
   if (isset ($_SESSION['full_name'])){
     echo "logged in with name '" .$_SESSION['full_name'] . "'. You can <a href='logout.php'>logout</a>";
   }
@@ -50,7 +50,7 @@
 
   <?php
 
-include 'includes/footer.php';
+include './includes/footer.php';
 
 }
 
